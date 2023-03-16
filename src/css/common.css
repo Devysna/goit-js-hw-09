@@ -16,3 +16,56 @@ img {
   display: block;
   max-width: 100%;
 }
+
+#datetime-picker {
+  box-sizing: border-box;
+  font-size: medium;
+  font-weight: bold;  
+  
+  margin-right: 15px;
+}
+
+button {  
+  font-size: large;     
+  padding: 10px;    
+  border-radius: 10px;      
+
+  font-weight: bold;
+}
+
+.timer {
+  display: flex;  
+  
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 15px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.value {
+  font-weight: bold;  
+  font-size: xx-large;
+  color: darkred;
+}
+
+.label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;   
+  
+  font-weight: bold;
+}
