@@ -26,7 +26,10 @@ function onCreatePromise(e) {
   let firstDelay = Number(delay.value);
   let delayStep = Number(step.value);
 
-  for (let i = 0; i < amount.value; i++)  {
+  let loopAmount = Number(amount.value);
+  document.getElementsByClassName("form")[0].reset();
+
+  for (let i = 0; i < loopAmount; i++)  {
     createPromise(1 + i, firstDelay + i * delayStep)
       .then(({ position, delay }) => {
         Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
@@ -34,5 +37,5 @@ function onCreatePromise(e) {
       .catch(({ position, delay }) => {
         Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
       });
-  }   
+  }  
 };
